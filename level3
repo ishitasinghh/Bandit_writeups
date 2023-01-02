@@ -1,2 +1,10 @@
 //The password for the next level is stored in a hidden file in the inhere directory.
 
+First we have to connect to bandit using the command : ssh bandit3@bandit.labs.overthewire.org -p 2220
+Then we have to enter the password given in the question.
+Next we have to list all files using the command:  ls -alps
+Then we go to the inhere directory using : cd inhere/
+Next we have to list all files using the command:  ls -al.
+Now we have to go to the hidden file using: cat .hidden
+After this we get the password for level 4 and then we exit from level 3.
+
