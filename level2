@@ -1,2 +1,8 @@
 //The password for the next level is stored in a file called spaces in this filename located in the home directory
 
+First we have to connect to bandit using the command : ssh bandit2@bandit.labs.overthewire.org -p 2220
+Then we have to enter the password which we got from level 1.
+Next we have to list all files using the command:  ls -alps
+Then we open the read me file using : cat spaces\ in\ this\ filename (giving spaces to denote that this file has spaces)
+After this we get the password for level 3 and then we exit from level 2.
+
