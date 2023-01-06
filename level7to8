@@ -3,6 +3,4 @@ z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
 First we have to connect to bandit using the command : ssh bandit6@bandit.labs.overthewire.org -p 2220
 Then we have to enter the password which we got from the previous question.
-Since we specifying the entire file system we use / : find / -type f -user bandit7 -group bandit6 -size 33c.
-Then we will cat the content of the .password file.
-After this we get the password for level 7 and then we exit from level 6.
+
