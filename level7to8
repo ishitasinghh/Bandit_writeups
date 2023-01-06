@@ -1,6 +1,10 @@
-z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 //The password for the next level is stored in the file data.txt next to the word millionth
 
-First we have to connect to bandit using the command : ssh bandit6@bandit.labs.overthewire.org -p 2220
+First we have to connect to bandit using the command : ssh bandit7@bandit.labs.overthewire.org -p 2220
 Then we have to enter the password which we got from the previous question.
-
+Then we will list all the files using : ls -alps
+Now we will cat the contents od the data.txt file using : cat data.txt
+Then we will use strings command to sort .
+Inorder to get the password stored in the text file next to the given word we use grep command:
+strings data.txt | grep "millionth"
+Now we get the password for level 8 , and we exit from level 7.
