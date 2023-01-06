@@ -1,0 +1,6 @@
+//The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+
+First we have to connect to bandit using the command : ssh bandit9@bandit.labs.overthewire.org -p 2220.
+Then we have to enter the password which we got from the previous question.
+Now we can use : strings data.txt | grep "=" .
+After this we get the password for level 10 and then we exit from level 9.
