@@ -1,0 +1,13 @@
+//The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:
+  human-readable
+  1033 bytes in size
+  not executable
+  
+First we have to connect to bandit using the command : ssh bandit5@bandit.labs.overthewire.org -p 2220
+Then we have to enter the password which we got from the previous question.
+Next we have to list all files using the command:  ls
+Then we go to the inhere directory using : cd inhere/
+Now we enter the file type along with the parameters given:find . -type f -size 1033c ! -executable (c= bytes , b=blocks)
+Then it will give us the file and we will cat the content of the file .
+After this we get the password for level 5 and then we exit from level 4.
+  
