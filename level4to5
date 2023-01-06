@@ -1,0 +1,13 @@
+//The password for the next level is stored in the only human-readable file in the inhere directory.
+Tip: if your terminal is messed up, try the “reset” command.
+
+
+
+First we have to connect to bandit using the command : ssh bandit4@bandit.labs.overthewire.org -p 2220
+Then we have to enter the password which we got from the previous question.
+Next we have to list all files using the command:  ls -alps
+Then we go to the inhere directory using : cd inhere/
+Next we have to list all files using the command:  ls 
+Then in order to find the human readable file we use the command find . -type f | xargs file.
+We can see that ./-file07  has ASCII texyt and hence we access that file using cat ./-file07 .
+After this we get the password for level 5 and then we exit from level 4.
